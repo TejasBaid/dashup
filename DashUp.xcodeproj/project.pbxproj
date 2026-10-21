@@ -1,0 +1,906 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11257136E93AE953EB7AD3FA /* HookServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC54C40AEE83F24A880C0A8 /* HookServer.swift */; };
+		14A4479E560E1D15920F55A0 /* ClaudeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CEEDE9C14DF24BFC2110A4 /* ClaudeView.swift */; };
+		1596D1FD4855A92722704C4D /* ChromeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EC9DF65DF31469249EB2E7 /* ChromeProvider.swift */; };
+		166E14B24CF61A7BDDAEDF49 /* PadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10E9DAF94238EA83CAFECA1 /* PadView.swift */; };
+		1CB6D1B8496DA93CAAA63145 /* PadProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CFE4DA8E93663807E283D /* PadProvider.swift */; };
+		1D1CCC24A70A14182E812B2F /* NowPlayingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1240EDB88D7A796A68F6018 /* NowPlayingProvider.swift */; };
+		208C951D1FE4069F126F7120 /* AppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9167FA19152C3CD54A0B0988 /* AppsView.swift */; };
+		25583417D36771CA89C8D827 /* DashUpKit in Frameworks */ = {isa = PBXBuildFile; productRef = F292B43141189FF2D0B7D232 /* DashUpKit */; };
+		26B07812E32CB201B3EF9807 /* DashUpMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C11CED435C922321A60FB7 /* DashUpMacApp.swift */; };
+		2A82F1C551D20603CE6CF119 /* StandbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F32D0E42FE85B870A1E36B6 /* StandbyView.swift */; };
+		2C775071C969112922318D71 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7EAD33E6249C1095E49417 /* SettingsView.swift */; };
+		33E8252DD202C4673107DB1D /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D5B539894A1A40C1BF2BFF /* DemoData.swift */; };
+		358D9E177480CDEFB4EA4BBE /* Scripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6069D0BB790A29A15B44128 /* Scripting.swift */; };
+		4351FBC71729004B93945089 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8F370AA9E6E6F7CC060334 /* ImageStore.swift */; };
+		4926BF104D13A735E943640C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EEF08C4001959CA0391804 /* Theme.swift */; };
+		51FAF7DD89FD02C0546236D8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C4521AC68C001CD38C88C /* HomeView.swift */; };
+		524F9A29761F27A654121288 /* MacLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA15BA70FACC9D8D8E8D1442 /* MacLink.swift */; };
+		572A5904D68D93616806BF57 /* DashUpPadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F62807D54146CB43A5FC9C /* DashUpPadApp.swift */; };
+		5AD0AA8F102C2F5AEA2A5C86 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1FBD61E527B25FAA053940 /* Images.swift */; };
+		5FF022D7992DBA96B2BDC432 /* DashUpKit in Frameworks */ = {isa = PBXBuildFile; productRef = 844EC90FC119D1E88716F3BB /* DashUpKit */; };
+		60978974B1AAED23AD2BA616 /* DashUpPadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FED487EDF41BA706E8E3163 /* DashUpPadUITests.swift */; };
+		74558236291EE3A678704153 /* now-playing.pl in Resources */ = {isa = PBXBuildFile; fileRef = DC5C855D288393F550C8D6A0 /* now-playing.pl */; };
+		802FB21A158BFC6B47318C09 /* AppsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8489DA4C8DE9A80EEE220C /* AppsProvider.swift */; };
+		86DE19AF2E77A6503D6BE615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0557D73991F1F79F83BC04B1 /* Assets.xcassets */; };
+		87A78B0210BAB56C825C0432 /* MediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C3F5BE4134A5D6BFA253CA /* MediaView.swift */; };
+		8FE4CFD91E09A924B15D7B76 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231142A6597DAFAB9C8F3A44 /* TabsView.swift */; };
+		A9742F55F66159F07B321305 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8C0DF7DCCA8DB2265A87F /* AppModel.swift */; };
+		B63A9E6BD05804CF7DA5F216 /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB804085DBDFDFE5E455E4DD /* Agent.swift */; };
+		BE592FAC0CE9DE581D41E491 /* TranscriptCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158AC6DD64AE49D340A03EFD /* TranscriptCache.swift */; };
+		C2D35828965DA2ADEC2D7FCB /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B278745023C11FEE49A82F /* Components.swift */; };
+		D4AB8748F7449D30007234FA /* HookInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42913A5BBD460B451D8B512 /* HookInstaller.swift */; };
+		D9DC073C4E87CDC409814934 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B82CF5AAAD75F0BBB9F1EE6 /* RootView.swift */; };
+		E1F96EFA6A63AB79AFF382E2 /* ClaudeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9601E27CFF7E1BA9A5A27205 /* ClaudeProvider.swift */; };
+		E863117762D55C4910AB5972 /* PairingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5F360F4EA42EB8127525C3 /* PairingView.swift */; };
+		EADDDA82E46CB9B06B6409D6 /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C147F45F089B89A2B3F3BCE3 /* MarkdownView.swift */; };
+		F572F84AB2E950B98F0D2B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546F64BAB9078FC32B6E5651 /* Assets.xcassets */; };
+		F5A75E3FB6C16B91DE07A23D /* PeerServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397872A75DB86D4C84129DEF /* PeerServer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4765554C4F377E3C9F6A18D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8219A6B42E080683D4F71EB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E38D54051BB5A46CE78DCF9;
+			remoteInfo = DashUpPad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0557D73991F1F79F83BC04B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FED487EDF41BA706E8E3163 /* DashUpPadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashUpPadUITests.swift; sourceTree = "<group>"; };
+		12CEEDE9C14DF24BFC2110A4 /* ClaudeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeView.swift; sourceTree = "<group>"; };
+		14EEF08C4001959CA0391804 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		158AC6DD64AE49D340A03EFD /* TranscriptCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptCache.swift; sourceTree = "<group>"; };
+		17EC9DF65DF31469249EB2E7 /* ChromeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromeProvider.swift; sourceTree = "<group>"; };
+		1B82CF5AAAD75F0BBB9F1EE6 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		231142A6597DAFAB9C8F3A44 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		286745FCF8B24EBCA269B4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		29B278745023C11FEE49A82F /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		35E581F0037EAF1E9003A239 /* DashUpKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DashUpKit; path = Packages/DashUpKit; sourceTree = SOURCE_ROOT; };
+		397872A75DB86D4C84129DEF /* PeerServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerServer.swift; sourceTree = "<group>"; };
+		3E5F360F4EA42EB8127525C3 /* PairingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingView.swift; sourceTree = "<group>"; };
+		4F32D0E42FE85B870A1E36B6 /* StandbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandbyView.swift; sourceTree = "<group>"; };
+		546F64BAB9078FC32B6E5651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57D8C0DF7DCCA8DB2265A87F /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		5F7EAD33E6249C1095E49417 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		73FB2ADBD439A9EC9BA17307 /* DashUpMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DashUpMac.entitlements; sourceTree = "<group>"; };
+		9167FA19152C3CD54A0B0988 /* AppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsView.swift; sourceTree = "<group>"; };
+		9601E27CFF7E1BA9A5A27205 /* ClaudeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeProvider.swift; sourceTree = "<group>"; };
+		9F6266BF373A0A0E66D42F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A0D5B539894A1A40C1BF2BFF /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
+		A41CFE4DA8E93663807E283D /* PadProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadProvider.swift; sourceTree = "<group>"; };
+		A6069D0BB790A29A15B44128 /* Scripting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scripting.swift; sourceTree = "<group>"; };
+		A9C3F5BE4134A5D6BFA253CA /* MediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaView.swift; sourceTree = "<group>"; };
+		AB7C4521AC68C001CD38C88C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C1240EDB88D7A796A68F6018 /* NowPlayingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingProvider.swift; sourceTree = "<group>"; };
+		C147F45F089B89A2B3F3BCE3 /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownView.swift; sourceTree = "<group>"; };
+		C1F62807D54146CB43A5FC9C /* DashUpPadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashUpPadApp.swift; sourceTree = "<group>"; };
+		CA15BA70FACC9D8D8E8D1442 /* MacLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacLink.swift; sourceTree = "<group>"; };
+		CBC6EF497AD74B96894BA81C /* DashUpPad.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DashUpPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC1FBD61E527B25FAA053940 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		CC8F370AA9E6E6F7CC060334 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		D4C11CED435C922321A60FB7 /* DashUpMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashUpMacApp.swift; sourceTree = "<group>"; };
+		DA9408950B8D243A6916AFD0 /* DashUpPadUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DashUpPadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC54C40AEE83F24A880C0A8 /* HookServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HookServer.swift; sourceTree = "<group>"; };
+		DC5C855D288393F550C8D6A0 /* now-playing.pl */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = "now-playing.pl"; sourceTree = "<group>"; };
+		E10E9DAF94238EA83CAFECA1 /* PadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadView.swift; sourceTree = "<group>"; };
+		E42913A5BBD460B451D8B512 /* HookInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HookInstaller.swift; sourceTree = "<group>"; };
+		EB804085DBDFDFE5E455E4DD /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		EF8516BF3E07BC641B47B6FA /* DashUpMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DashUpMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8489DA4C8DE9A80EEE220C /* AppsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsProvider.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0518CCEB0FA1F57A5094B314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25583417D36771CA89C8D827 /* DashUpKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F4EF0A037EA004827A8ED16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FF022D7992DBA96B2BDC432 /* DashUpKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08D76D289F00A6609D2E46B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				546F64BAB9078FC32B6E5651 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0C8EEC9F5AF15FC0EF95BA3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57D8C0DF7DCCA8DB2265A87F /* AppModel.swift */,
+				A0D5B539894A1A40C1BF2BFF /* DemoData.swift */,
+				CC8F370AA9E6E6F7CC060334 /* ImageStore.swift */,
+				CA15BA70FACC9D8D8E8D1442 /* MacLink.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28E8D6282225E65157E23BDB /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				9167FA19152C3CD54A0B0988 /* AppsView.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		2D84854CD78D5260AD0820B7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5F7EAD33E6249C1095E49417 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		30B58C6F853EE3489A44A134 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				28E8D6282225E65157E23BDB /* Apps */,
+				57A0FDFDE7973107A0E20CFD /* Claude */,
+				89EFAE49791A28F2A23259B2 /* Home */,
+				5FFC880E1FECAB9DAAA68189 /* Media */,
+				E4EBE8C75E7BD97BDF94FA19 /* Pad */,
+				C7D96A9F65A552E26D9DEE3E /* Pairing */,
+				2D84854CD78D5260AD0820B7 /* Settings */,
+				FAD2ADBE6A7A683A4F7DCEC5 /* Standby */,
+				F051B46E00552A79EB6E2D4B /* Tabs */,
+				1B82CF5AAAD75F0BBB9F1EE6 /* RootView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		30BD5D67F434C0C8D2E5951A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0557D73991F1F79F83BC04B1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		31D6C61CEDDD5B69ADEF647A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EB804085DBDFDFE5E455E4DD /* Agent.swift */,
+				D4C11CED435C922321A60FB7 /* DashUpMacApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4DB751C569DD3EDBD5BF8D26 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				FA8489DA4C8DE9A80EEE220C /* AppsProvider.swift */,
+				17EC9DF65DF31469249EB2E7 /* ChromeProvider.swift */,
+				9601E27CFF7E1BA9A5A27205 /* ClaudeProvider.swift */,
+				C1240EDB88D7A796A68F6018 /* NowPlayingProvider.swift */,
+				A41CFE4DA8E93663807E283D /* PadProvider.swift */,
+				158AC6DD64AE49D340A03EFD /* TranscriptCache.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		57A0FDFDE7973107A0E20CFD /* Claude */ = {
+			isa = PBXGroup;
+			children = (
+				12CEEDE9C14DF24BFC2110A4 /* ClaudeView.swift */,
+			);
+			path = Claude;
+			sourceTree = "<group>";
+		};
+		5FFC880E1FECAB9DAAA68189 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				A9C3F5BE4134A5D6BFA253CA /* MediaView.swift */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		6FA01342769AD91E39888EE0 /* NowPlaying */ = {
+			isa = PBXGroup;
+			children = (
+				DC5C855D288393F550C8D6A0 /* now-playing.pl */,
+			);
+			path = NowPlaying;
+			sourceTree = "<group>";
+		};
+		7FE19D588CC9618CC82EBF84 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C1F62807D54146CB43A5FC9C /* DashUpPadApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		88CF4DC2DBEE03DC09B169CE /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				35E581F0037EAF1E9003A239 /* DashUpKit */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		89EFAE49791A28F2A23259B2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C4521AC68C001CD38C88C /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		97E7DBFD941FBF3FE9830212 = {
+			isa = PBXGroup;
+			children = (
+				C8DC6DD4F76D58B806135105 /* Mac */,
+				88CF4DC2DBEE03DC09B169CE /* Packages */,
+				C9BB486E46190CB7EF812A25 /* Pad */,
+				9963A225B349F871D6732164 /* PadUITests */,
+				BCD981D93CD8BA9A3740363A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9963A225B349F871D6732164 /* PadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0FED487EDF41BA706E8E3163 /* DashUpPadUITests.swift */,
+			);
+			path = PadUITests;
+			sourceTree = "<group>";
+		};
+		B2DFBE9DE37EF6ACC142B1AF /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				29B278745023C11FEE49A82F /* Components.swift */,
+				CC1FBD61E527B25FAA053940 /* Images.swift */,
+				C147F45F089B89A2B3F3BCE3 /* MarkdownView.swift */,
+				14EEF08C4001959CA0391804 /* Theme.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		BCD981D93CD8BA9A3740363A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF8516BF3E07BC641B47B6FA /* DashUpMac.app */,
+				CBC6EF497AD74B96894BA81C /* DashUpPad.app */,
+				DA9408950B8D243A6916AFD0 /* DashUpPadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7D96A9F65A552E26D9DEE3E /* Pairing */ = {
+			isa = PBXGroup;
+			children = (
+				3E5F360F4EA42EB8127525C3 /* PairingView.swift */,
+			);
+			path = Pairing;
+			sourceTree = "<group>";
+		};
+		C8DC6DD4F76D58B806135105 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				31D6C61CEDDD5B69ADEF647A /* App */,
+				6FA01342769AD91E39888EE0 /* NowPlaying */,
+				4DB751C569DD3EDBD5BF8D26 /* Providers */,
+				30BD5D67F434C0C8D2E5951A /* Resources */,
+				E8F42A7013FF6DDEB9717D96 /* Server */,
+				CC60864E0F5DD992102C618E /* Support */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		C9BB486E46190CB7EF812A25 /* Pad */ = {
+			isa = PBXGroup;
+			children = (
+				7FE19D588CC9618CC82EBF84 /* App */,
+				B2DFBE9DE37EF6ACC142B1AF /* DesignSystem */,
+				30B58C6F853EE3489A44A134 /* Features */,
+				0C8EEC9F5AF15FC0EF95BA3A /* Model */,
+				08D76D289F00A6609D2E46B6 /* Resources */,
+				CF894DDD97D4F190119CA6A3 /* Support */,
+			);
+			path = Pad;
+			sourceTree = "<group>";
+		};
+		CC60864E0F5DD992102C618E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				73FB2ADBD439A9EC9BA17307 /* DashUpMac.entitlements */,
+				9F6266BF373A0A0E66D42F6B /* Info.plist */,
+				A6069D0BB790A29A15B44128 /* Scripting.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		CF894DDD97D4F190119CA6A3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				286745FCF8B24EBCA269B4B9 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		E4EBE8C75E7BD97BDF94FA19 /* Pad */ = {
+			isa = PBXGroup;
+			children = (
+				E10E9DAF94238EA83CAFECA1 /* PadView.swift */,
+			);
+			path = Pad;
+			sourceTree = "<group>";
+		};
+		E8F42A7013FF6DDEB9717D96 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				E42913A5BBD460B451D8B512 /* HookInstaller.swift */,
+				DBC54C40AEE83F24A880C0A8 /* HookServer.swift */,
+				397872A75DB86D4C84129DEF /* PeerServer.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		F051B46E00552A79EB6E2D4B /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				231142A6597DAFAB9C8F3A44 /* TabsView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		FAD2ADBE6A7A683A4F7DCEC5 /* Standby */ = {
+			isa = PBXGroup;
+			children = (
+				4F32D0E42FE85B870A1E36B6 /* StandbyView.swift */,
+			);
+			path = Standby;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57D4ADF3BE6487A0115435FB /* DashUpMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4790096991362C449109A3ED /* Build configuration list for PBXNativeTarget "DashUpMac" */;
+			buildPhases = (
+				BEE0775CEDDAC6838988A42C /* Build Now Playing bridge */,
+				2FB10BAD5520D2D9C25B3383 /* Sources */,
+				49CCB688F25FDA04290D3FE3 /* Resources */,
+				2F4EF0A037EA004827A8ED16 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DashUpMac;
+			packageProductDependencies = (
+				844EC90FC119D1E88716F3BB /* DashUpKit */,
+			);
+			productName = DashUpMac;
+			productReference = EF8516BF3E07BC641B47B6FA /* DashUpMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E38D54051BB5A46CE78DCF9 /* DashUpPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0E38D729EA91E163D347A8 /* Build configuration list for PBXNativeTarget "DashUpPad" */;
+			buildPhases = (
+				A1339EED095CF9CBC7734AC4 /* Sources */,
+				423C44838AD129DCF7ACF92D /* Resources */,
+				0518CCEB0FA1F57A5094B314 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DashUpPad;
+			packageProductDependencies = (
+				F292B43141189FF2D0B7D232 /* DashUpKit */,
+			);
+			productName = DashUpPad;
+			productReference = CBC6EF497AD74B96894BA81C /* DashUpPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E3C5D6B497809442C93EAE1 /* DashUpPadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB656D347AC7374E4118A714 /* Build configuration list for PBXNativeTarget "DashUpPadUITests" */;
+			buildPhases = (
+				B45B465C91730AD0A21E6502 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2073BFB2D91010E3B02D7F2F /* PBXTargetDependency */,
+			);
+			name = DashUpPadUITests;
+			packageProductDependencies = (
+			);
+			productName = DashUpPadUITests;
+			productReference = DA9408950B8D243A6916AFD0 /* DashUpPadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8219A6B42E080683D4F71EB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					57D4ADF3BE6487A0115435FB = {
+						ProvisioningStyle = Manual;
+					};
+					5E38D54051BB5A46CE78DCF9 = {
+						ProvisioningStyle = Automatic;
+					};
+					7E3C5D6B497809442C93EAE1 = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5E38D54051BB5A46CE78DCF9;
+					};
+				};
+			};
+			buildConfigurationList = 7647A3C389C3822C49E2288C /* Build configuration list for PBXProject "DashUp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 97E7DBFD941FBF3FE9830212;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9FE6B702B12BF3C83D065FA0 /* XCLocalSwiftPackageReference "Packages/DashUpKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BCD981D93CD8BA9A3740363A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57D4ADF3BE6487A0115435FB /* DashUpMac */,
+				5E38D54051BB5A46CE78DCF9 /* DashUpPad */,
+				7E3C5D6B497809442C93EAE1 /* DashUpPadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		423C44838AD129DCF7ACF92D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F572F84AB2E950B98F0D2B9D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49CCB688F25FDA04290D3FE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86DE19AF2E77A6503D6BE615 /* Assets.xcassets in Resources */,
+				74558236291EE3A678704153 /* now-playing.pl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BEE0775CEDDAC6838988A42C /* Build Now Playing bridge */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Mac/NowPlaying/DashUpMediaRemote.m",
+			);
+			name = "Build Now Playing bridge";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/libDashUpMediaRemote.dylib",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"\nxcrun clang -dynamiclib -fobjc-arc -framework Foundation -mmacosx-version-min=15.0 -arch arm64 -arch x86_64 \\\n  -o \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/libDashUpMediaRemote.dylib\" \\\n  \"${SRCROOT}/Mac/NowPlaying/DashUpMediaRemote.m\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FB10BAD5520D2D9C25B3383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B63A9E6BD05804CF7DA5F216 /* Agent.swift in Sources */,
+				802FB21A158BFC6B47318C09 /* AppsProvider.swift in Sources */,
+				1596D1FD4855A92722704C4D /* ChromeProvider.swift in Sources */,
+				E1F96EFA6A63AB79AFF382E2 /* ClaudeProvider.swift in Sources */,
+				26B07812E32CB201B3EF9807 /* DashUpMacApp.swift in Sources */,
+				D4AB8748F7449D30007234FA /* HookInstaller.swift in Sources */,
+				11257136E93AE953EB7AD3FA /* HookServer.swift in Sources */,
+				1D1CCC24A70A14182E812B2F /* NowPlayingProvider.swift in Sources */,
+				1CB6D1B8496DA93CAAA63145 /* PadProvider.swift in Sources */,
+				F5A75E3FB6C16B91DE07A23D /* PeerServer.swift in Sources */,
+				358D9E177480CDEFB4EA4BBE /* Scripting.swift in Sources */,
+				BE592FAC0CE9DE581D41E491 /* TranscriptCache.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1339EED095CF9CBC7734AC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9742F55F66159F07B321305 /* AppModel.swift in Sources */,
+				208C951D1FE4069F126F7120 /* AppsView.swift in Sources */,
+				14A4479E560E1D15920F55A0 /* ClaudeView.swift in Sources */,
+				C2D35828965DA2ADEC2D7FCB /* Components.swift in Sources */,
+				572A5904D68D93616806BF57 /* DashUpPadApp.swift in Sources */,
+				33E8252DD202C4673107DB1D /* DemoData.swift in Sources */,
+				51FAF7DD89FD02C0546236D8 /* HomeView.swift in Sources */,
+				4351FBC71729004B93945089 /* ImageStore.swift in Sources */,
+				5AD0AA8F102C2F5AEA2A5C86 /* Images.swift in Sources */,
+				524F9A29761F27A654121288 /* MacLink.swift in Sources */,
+				EADDDA82E46CB9B06B6409D6 /* MarkdownView.swift in Sources */,
+				87A78B0210BAB56C825C0432 /* MediaView.swift in Sources */,
+				166E14B24CF61A7BDDAEDF49 /* PadView.swift in Sources */,
+				E863117762D55C4910AB5972 /* PairingView.swift in Sources */,
+				D9DC073C4E87CDC409814934 /* RootView.swift in Sources */,
+				2C775071C969112922318D71 /* SettingsView.swift in Sources */,
+				2A82F1C551D20603CE6CF119 /* StandbyView.swift in Sources */,
+				8FE4CFD91E09A924B15D7B76 /* TabsView.swift in Sources */,
+				4926BF104D13A735E943640C /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45B465C91730AD0A21E6502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60978974B1AAED23AD2BA616 /* DashUpPadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2073BFB2D91010E3B02D7F2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E38D54051BB5A46CE78DCF9 /* DashUpPad */;
+			targetProxy = B4765554C4F377E3C9F6A18D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4E95A41CEFF812AD5A4D3DCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Mac/Support/DashUpMac.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Mac/Support/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tejasbaid.dashup.mac;
+				PRODUCT_NAME = DashUp;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5AAE31F4868A02AEF4EF83C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		6B058B1589C03656A4271D7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tejasbaid.dashup.pad.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				TEST_TARGET_NAME = DashUpPad;
+			};
+			name = Release;
+		};
+		76BFBD794212096F12BF55D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tejasbaid.dashup.pad.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				TEST_TARGET_NAME = DashUpPad;
+			};
+			name = Debug;
+		};
+		B77507904AFD158B27494798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Mac/Support/DashUpMac.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Mac/Support/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tejasbaid.dashup.mac;
+				PRODUCT_NAME = DashUp;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CE801D5D54728B58FA99A662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Pad/Support/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tejasbaid.dashup.pad;
+				PRODUCT_NAME = DashUp;
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		EADBB59E8AAA3C756EE8FCF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		FD4D9A7E7881A5DC4AC229F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Pad/Support/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tejasbaid.dashup.pad;
+				PRODUCT_NAME = DashUp;
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A0E38D729EA91E163D347A8 /* Build configuration list for PBXNativeTarget "DashUpPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD4D9A7E7881A5DC4AC229F6 /* Debug */,
+				CE801D5D54728B58FA99A662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4790096991362C449109A3ED /* Build configuration list for PBXNativeTarget "DashUpMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E95A41CEFF812AD5A4D3DCE /* Debug */,
+				B77507904AFD158B27494798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7647A3C389C3822C49E2288C /* Build configuration list for PBXProject "DashUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AAE31F4868A02AEF4EF83C7 /* Debug */,
+				EADBB59E8AAA3C756EE8FCF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EB656D347AC7374E4118A714 /* Build configuration list for PBXNativeTarget "DashUpPadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BFBD794212096F12BF55D8 /* Debug */,
+				6B058B1589C03656A4271D7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		9FE6B702B12BF3C83D065FA0 /* XCLocalSwiftPackageReference "Packages/DashUpKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/DashUpKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		844EC90FC119D1E88716F3BB /* DashUpKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DashUpKit;
+		};
+		F292B43141189FF2D0B7D232 /* DashUpKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DashUpKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8219A6B42E080683D4F71EB6 /* Project object */;
+}

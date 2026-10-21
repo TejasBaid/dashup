@@ -1,0 +1,90 @@
+name: DashUp
+options:
+  bundleIdPrefix: com.tejasbaid.dashup
+  deploymentTarget:
+    macOS: "26.0"
+    iOS: "26.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEAD_CODE_STRIPPING: YES
+packages:
+  DashUpKit:
+    path: Packages/DashUpKit
+targets:
+  DashUpMac:
+    type: application
+    platform: macOS
+    sources:
+      - path: Mac
+        excludes:
+          - "NowPlaying/*.m"
+    preBuildScripts:
+      - name: Build Now Playing bridge
+        basedOnDependencyAnalysis: true
+        inputFiles:
+          - $(SRCROOT)/Mac/NowPlaying/DashUpMediaRemote.m
+        outputFiles:
+          - $(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/libDashUpMediaRemote.dylib
+        script: |
+          mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
+          xcrun clang -dynamiclib -fobjc-arc -framework Foundation -mmacosx-version-min=15.0 -arch arm64 -arch x86_64 \
+            -o "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/libDashUpMediaRemote.dylib" \
+            "${SRCROOT}/Mac/NowPlaying/DashUpMediaRemote.m"
+    dependencies:
+      - package: DashUpKit
+        product: DashUpKit
+    settings:
+      base:
+        PRODUCT_NAME: DashUp
+        PRODUCT_BUNDLE_IDENTIFIER: com.tejasbaid.dashup.mac
+        INFOPLIST_FILE: Mac/Support/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        CODE_SIGN_ENTITLEMENTS: Mac/Support/DashUpMac.entitlements
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: "-"
+        ENABLE_HARDENED_RUNTIME: NO
+        ENABLE_APP_SANDBOX: NO
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+  DashUpPad:
+    type: application
+    platform: iOS
+    sources:
+      - path: Pad
+    dependencies:
+      - package: DashUpKit
+        product: DashUpKit
+    settings:
+      base:
+        PRODUCT_NAME: DashUp
+        PRODUCT_BUNDLE_IDENTIFIER: com.tejasbaid.dashup.pad
+        INFOPLIST_FILE: Pad/Support/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        TARGETED_DEVICE_FAMILY: "2"
+        SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+        SWIFT_APPROACHABLE_CONCURRENCY: YES
+        CODE_SIGN_STYLE: Automatic
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    scheme:
+      testTargets:
+        - DashUpPadUITests
+  DashUpPadUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: PadUITests
+    dependencies:
+      - target: DashUpPad
+    settings:
+      base:
+        TEST_TARGET_NAME: DashUpPad
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.tejasbaid.dashup.pad.uitests
+        TARGETED_DEVICE_FAMILY: "2"
+        CODE_SIGN_STYLE: Automatic
